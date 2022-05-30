@@ -1,0 +1,28 @@
+// If you want to override variables do it here
+@import "variables";
+
+$enable-ltr: true;
+$enable-rtl: true;
+
+// Import CoreUI for React components library
+@import "@coreui/coreui/scss/coreui";
+
+// Import Chart.js custom tooltips styles
+@import "@coreui/chartjs/scss/coreui-chartjs";
+
+@import "layout";
+@import "example";
+
+// If you want to add custom CSS you can put it here.
+@import "custom";
+
+@import url('https://fontsme.com/merry-christmas-color.font');
+@font-face{
+    font-family:"merry-christmas-color-regular";
+    src:url("https://fontsme.com/wp-data/m/651/12651/file/MerryChrisColor_PERSONAL_USE.ttf") format("woff"),
+    url("https://fontsme.com/wp-data/m/651/12651/file/MerryChrisColor_PERSONAL_USE.ttf") format("opentype"),
+    url("https://fontsme.com/wp-data/m/651/12651/file/MerryChrisColor_PERSONAL_USE.ttf") format("truetype");
+}
+*{
+  font-family:"merry-christmas-color-regular";
+}
